@@ -80,12 +80,11 @@ body {
     border: 1px solid var(--sec-color);
     padding: 10px;
     display: flex;
-    flex-direction: column; /* Adjusted to column layout */
 }
 
 .post-img,
 .comment-img {
-    width: 10%;
+    width: 20%;
 }
 
 .post-description,
@@ -97,7 +96,8 @@ body {
 .post-title,
 .comment-title {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -115,7 +115,12 @@ body {
     align-items: center;
     margin-top: 10px;
 }
-
+.comment-icon,
+.twitt-icon,
+.like-icon {
+    display: flex;
+    align-items: center;
+}
 .comment-icon img,
 .twitt-icon img,
 .like-icon img {
