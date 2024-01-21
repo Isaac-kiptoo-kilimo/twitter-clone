@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-primary: #3252d3;
+    --primary-color: #fff;
+    --sec-color: #EFE2BA;
+    --blue-color: #4056a1;
+    --sec-sec-color: #D79922;
+}
+
+body {
+    background-color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--bg-primary);
+    color: #D79922;
+}
+
+.header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+}
+
+.search-input input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+    padding: 20px;
+}
+
+.user-profile img {
+    border-radius: 50%;
+}
+
+.content-main {
+    display: flex;
+    gap: 10px; /* Adjusted gap between posts and comments */
+    padding: 20px;
+}
+
+.posts,
+.comments {
+    flex: 1;
+}
+
+.posts h3,
+.comments h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.posts-content,
+.comments-content {
+    border: 1px solid var(--sec-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Adjusted to column layout */
+}
+
+.post-img,
+.comment-img {
+    width: 10%;
+}
+
+.post-description,
+.comment-description {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.post-title,
+.comment-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-description p,
+.post-description p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.content-bottom,
+.commnent-bottom {
+    display: flex;
+    gap: 4rem;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-icon img,
+.twitt-icon img,
+.like-icon img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.comment-icon p,
+.twitt-icon p,
+.like-icon p {
+    color: gray;
+}
