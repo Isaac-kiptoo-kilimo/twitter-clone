@@ -80,6 +80,8 @@ body {
     border: 1px solid var(--sec-color);
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .post-img,
